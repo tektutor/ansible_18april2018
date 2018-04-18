@@ -1,0 +1,61 @@
+- name: This playbook will install nginx web server on Ubuntu and CentOS boxes
+  hosts: all
+  vars:
+    - provisioner_tool: Docker
+    - automation_tool: Ansible
+    - template_lib: Jinja2 Library
+    - proxy_conf:
+        http_proxy: http://10.19.16.165:8080
+        https_proxy: https://10.19.16.165:8080
+
+  handlers:
+   - name: Restart the nginx server
+     service: name=nginx state=restarted
+
+  tasks: 
+   - name: Install nginx on Ubuntu server
+     apt: name=nginx update_cache=yes state=present
+     when: ( ansible_distribution == "Ubuntu" and ansible_os_family == "Debian" )
+     environment: "{{proxy_conf}}"
+     tags:
+       - install
+
+   - name: Install epel-release package in CentOS server
+     yum: name=epel-release state=present
+     when: ( ansible_distribution == "CentOS" and ansible_os_family == "RedHat" )
+     environment: "{{proxy_conf}}"
+     tags:
+       - install
+   
+   - name: Install nginx on CentOS server
+     yum: name=nginx state=present
+     when: ( ansible_distribution == "CentOS" and ansible_os_family == "RedHat" )
+     environment: "{{proxy_conf}}"
+     tags:
+       - install
+
+   - name: Configure nginx web root folder in Ubuntu server
+     copy: src=default_ubuntu dest=/etc/nginx/sites-available/default
+     when: ( ansible_distribution == "Ubuntu" and ansible_os_family == "Debian" )
+     notify:
+        - Restart the nginx server
+         
+   - name: Configure nginx web root foler in CentOS server
+     copy: src=default_centos.conf dest=/etc/nginx/conf.d/default.conf
+     when: ( ansible_distribution == "CentOS" and ansible_os_family == "RedHat" )
+     notify:
+        - Restart the nginx server
+
+   - name: Create the web root folder in all servers
+     file: 
+       path: /var/html
+       state: directory
+       mode: 755
+
+   - name: Deploy web page in all servers
+     template: src=index.html.j2 dest=/var/html/index.html
+     tags:
+       - deploy 
+     notify:
+        - Restart the nginx server
+

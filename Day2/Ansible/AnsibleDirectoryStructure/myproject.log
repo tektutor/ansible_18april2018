@@ -1,0 +1,166 @@
+2018-04-17 15:19:31,235 p=25629 u=root |  ubuntu1 | SUCCESS => {
+    "changed": false, 
+    "ping": "pong"
+}
+2018-04-17 15:19:31,244 p=25629 u=root |  ubuntu2 | SUCCESS => {
+    "changed": false, 
+    "ping": "pong"
+}
+2018-04-17 15:19:51,382 p=25629 u=root |  centos2 | SUCCESS => {
+    "changed": false, 
+    "ping": "pong"
+}
+2018-04-17 15:19:51,397 p=25629 u=root |  centos1 | SUCCESS => {
+    "changed": false, 
+    "ping": "pong"
+}
+2018-04-17 15:20:47,400 p=25750 u=root |  centos2 | SUCCESS => {
+    "changed": false, 
+    "ping": "pong"
+}
+2018-04-17 15:20:47,533 p=25750 u=root |  ubuntu1 | SUCCESS => {
+    "changed": false, 
+    "ping": "pong"
+}
+2018-04-17 15:20:47,588 p=25750 u=root |  centos1 | SUCCESS => {
+    "changed": false, 
+    "ping": "pong"
+}
+2018-04-17 15:20:47,608 p=25750 u=root |  ubuntu2 | SUCCESS => {
+    "changed": false, 
+    "ping": "pong"
+}
+2018-04-17 15:21:02,057 p=25876 u=root |  centos2 | FAILED! => {
+    "failed": true, 
+    "msg": "failed to transfer file to /root/mytemp/ansible-tmp-1523958661.94-236976733463972/ping.py:\n\nCouldn't read packet: Connection reset by peer\r\n"
+}
+2018-04-17 15:21:02,095 p=25876 u=root |  centos1 | FAILED! => {
+    "failed": true, 
+    "msg": "failed to transfer file to /root/mytemp/ansible-tmp-1523958661.95-255030433911708/ping.py:\n\nCouldn't read packet: Connection reset by peer\r\n"
+}
+2018-04-17 15:21:02,251 p=25876 u=root |  ubuntu2 | SUCCESS => {
+    "changed": false, 
+    "ping": "pong"
+}
+2018-04-17 15:21:02,363 p=25876 u=root |  ubuntu1 | SUCCESS => {
+    "changed": false, 
+    "ping": "pong"
+}
+2018-04-17 15:21:10,605 p=25955 u=root |  centos1 | FAILED! => {
+    "failed": true, 
+    "msg": "failed to transfer file to /root/mytemp/ansible-tmp-1523958670.46-267355340463245/ping.py:\n\nCouldn't read packet: Connection reset by peer\r\n"
+}
+2018-04-17 15:21:10,607 p=25955 u=root |  centos2 | FAILED! => {
+    "failed": true, 
+    "msg": "failed to transfer file to /root/mytemp/ansible-tmp-1523958670.47-223784256060107/ping.py:\n\nCouldn't read packet: Connection reset by peer\r\n"
+}
+2018-04-17 15:21:10,855 p=25955 u=root |  ubuntu1 | SUCCESS => {
+    "changed": false, 
+    "ping": "pong"
+}
+2018-04-17 15:21:10,863 p=25955 u=root |  ubuntu2 | SUCCESS => {
+    "changed": false, 
+    "ping": "pong"
+}
+2018-04-17 15:21:21,278 p=26037 u=root |   [WARNING]: sftp transfer mechanism failed on [localhost]. Use ANSIBLE_DEBUG=1 to see detailed information
+
+2018-04-17 15:21:21,345 p=26037 u=root |   [WARNING]: sftp transfer mechanism failed on [localhost]. Use ANSIBLE_DEBUG=1 to see detailed information
+
+2018-04-17 15:21:21,584 p=26037 u=root |  ubuntu2 | SUCCESS => {
+    "changed": false, 
+    "ping": "pong"
+}
+2018-04-17 15:21:21,839 p=26037 u=root |  centos2 | SUCCESS => {
+    "changed": false, 
+    "ping": "pong"
+}
+2018-04-17 15:21:21,863 p=26037 u=root |  ubuntu1 | SUCCESS => {
+    "changed": false, 
+    "ping": "pong"
+}
+2018-04-17 15:21:21,947 p=26037 u=root |  centos1 | SUCCESS => {
+    "changed": false, 
+    "ping": "pong"
+}
+2018-04-17 15:21:46,224 p=26143 u=root |  ubuntu1 | SUCCESS => {
+    "changed": false, 
+    "ping": "pong"
+}
+2018-04-17 15:21:46,405 p=26143 u=root |  ubuntu2 | SUCCESS => {
+    "changed": false, 
+    "ping": "pong"
+}
+2018-04-17 15:21:46,493 p=26143 u=root |  centos2 | SUCCESS => {
+    "changed": false, 
+    "ping": "pong"
+}
+2018-04-17 15:21:46,501 p=26143 u=root |  centos1 | SUCCESS => {
+    "changed": false, 
+    "ping": "pong"
+}
+2018-04-17 15:22:31,144 p=26253 u=root |  PLAY [This playbook will install nginx web server on Ubuntu and CentOS boxes] **
+2018-04-17 15:22:31,191 p=26253 u=root |  TASK [setup] *******************************************************************
+2018-04-17 15:22:32,786 p=26253 u=root |  ok: [ubuntu1]
+2018-04-17 15:22:32,884 p=26253 u=root |  ok: [ubuntu2]
+2018-04-17 15:22:33,304 p=26253 u=root |  ok: [centos1]
+2018-04-17 15:22:33,372 p=26253 u=root |  ok: [centos2]
+2018-04-17 15:22:33,375 p=26253 u=root |  TASK [Install nginx on Ubuntu server] ******************************************
+2018-04-17 15:22:33,454 p=26253 u=root |  skipping: [centos1]
+2018-04-17 15:22:33,465 p=26253 u=root |  skipping: [centos2]
+2018-04-17 15:22:40,248 p=26253 u=root |  ok: [ubuntu2]
+2018-04-17 15:22:41,083 p=26253 u=root |  ok: [ubuntu1]
+2018-04-17 15:22:41,088 p=26253 u=root |  TASK [Install epel-release package in CentOS server] ***************************
+2018-04-17 15:22:41,225 p=26253 u=root |  skipping: [ubuntu1]
+2018-04-17 15:22:41,235 p=26253 u=root |  skipping: [ubuntu2]
+2018-04-17 15:22:42,281 p=26253 u=root |  ok: [centos1]
+2018-04-17 15:22:42,300 p=26253 u=root |  ok: [centos2]
+2018-04-17 15:22:42,303 p=26253 u=root |  TASK [Install nginx on CentOS server] ******************************************
+2018-04-17 15:22:42,498 p=26253 u=root |  skipping: [ubuntu1]
+2018-04-17 15:22:42,515 p=26253 u=root |  skipping: [ubuntu2]
+2018-04-17 15:22:43,058 p=26253 u=root |  ok: [centos1]
+2018-04-17 15:22:43,273 p=26253 u=root |  ok: [centos2]
+2018-04-17 15:22:43,276 p=26253 u=root |  TASK [Configure nginx web root folder in Ubuntu server] ************************
+2018-04-17 15:22:43,359 p=26253 u=root |  skipping: [centos2]
+2018-04-17 15:22:43,365 p=26253 u=root |  skipping: [centos1]
+2018-04-17 15:22:44,264 p=26253 u=root |  ok: [ubuntu1]
+2018-04-17 15:22:44,364 p=26253 u=root |  ok: [ubuntu2]
+2018-04-17 15:22:44,368 p=26253 u=root |  TASK [Configure nginx web root foler in CentOS server] *************************
+2018-04-17 15:22:44,523 p=26253 u=root |  skipping: [ubuntu1]
+2018-04-17 15:22:44,547 p=26253 u=root |  skipping: [ubuntu2]
+2018-04-17 15:22:45,165 p=26253 u=root |  ok: [centos1]
+2018-04-17 15:22:45,259 p=26253 u=root |  ok: [centos2]
+2018-04-17 15:22:45,261 p=26253 u=root |  TASK [Create the web root folder in all servers] *******************************
+2018-04-17 15:22:45,893 p=26253 u=root |  ok: [ubuntu1]
+2018-04-17 15:22:45,936 p=26253 u=root |  ok: [centos1]
+2018-04-17 15:22:46,006 p=26253 u=root |  ok: [centos2]
+2018-04-17 15:22:46,089 p=26253 u=root |  ok: [ubuntu2]
+2018-04-17 15:22:46,091 p=26253 u=root |  TASK [Deploy web page in all servers] ******************************************
+2018-04-17 15:22:47,381 p=26253 u=root |  ok: [centos1]
+2018-04-17 15:22:47,477 p=26253 u=root |  ok: [ubuntu2]
+2018-04-17 15:22:47,516 p=26253 u=root |  ok: [centos2]
+2018-04-17 15:22:47,548 p=26253 u=root |  ok: [ubuntu1]
+2018-04-17 15:22:47,551 p=26253 u=root |  PLAY RECAP *********************************************************************
+2018-04-17 15:22:47,551 p=26253 u=root |  centos1                    : ok=6    changed=0    unreachable=0    failed=0   
+2018-04-17 15:22:47,551 p=26253 u=root |  centos2                    : ok=6    changed=0    unreachable=0    failed=0   
+2018-04-17 15:22:47,551 p=26253 u=root |  ubuntu1                    : ok=5    changed=0    unreachable=0    failed=0   
+2018-04-17 15:22:47,552 p=26253 u=root |  ubuntu2                    : ok=5    changed=0    unreachable=0    failed=0   
+2018-04-17 15:25:47,144 p=27363 u=root |  PLAY [This playbook will install nginx web server on Ubuntu and CentOS boxes] **
+2018-04-17 15:25:47,176 p=27363 u=root |  TASK [setup] *******************************************************************
+2018-04-17 15:25:48,109 p=27363 u=root |  ok: [ubuntu2]
+2018-04-17 15:25:48,298 p=27363 u=root |  ok: [ubuntu1]
+2018-04-17 15:26:06,117 p=27363 u=root |   [ERROR]: User interrupted execution
+
+2018-04-17 15:26:14,168 p=27464 u=root |  ubuntu2 | SUCCESS => {
+    "changed": false, 
+    "ping": "pong"
+}
+2018-04-17 15:26:14,189 p=27464 u=root |  ubuntu1 | SUCCESS => {
+    "changed": false, 
+    "ping": "pong"
+}
+2018-04-17 15:26:33,546 p=27464 u=root |   [ERROR]: User interrupted execution
+
+2018-04-17 15:26:41,505 p=27528 u=root |  ubuntu1 | SUCCESS => {
+    "changed": false, 
+    "ping": "pong"
+}

@@ -1,0 +1,24 @@
+- name: Demonstrates use of register variable
+  hosts: localhost
+  ignore_errors: true
+
+  vars:
+    - skipTask: "no" 
+   
+  tasks:
+   - name: List the directory contents
+     shell: "ls -l"
+     register: output
+     when: skipTask == "no" 
+
+   - name: Print the output of the previous task
+     debug: var=output
+     when: output is succeeded
+
+   - name: Execute this task only if the List task failed 
+     debug: msg="List command failed" 
+     when: output is failed 
+
+   - name: Execute this task only when the List task is skipped
+     debug: msg="List task is skipped"
+     when: output is skipped

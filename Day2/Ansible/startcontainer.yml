@@ -1,0 +1,27 @@
+- name: Provision docker containers through ansible playbook
+  hosts: localhost
+
+  pre_tasks:
+     - name: Remove all currently running docker containers
+       shell: "docker rm -f $(docker ps -aq)"
+       ignore_errors: true
+
+  tasks:
+    - name: Create Ubuntu docker containers
+      docker_container:
+         image: tektutor/ansible-ubuntu
+         name: "ubuntu{{item}}"
+         hostname: "ubuntu{{item}}"
+         ports: "200{{item}}:22"
+      with_sequence: count=2
+
+    - name: Create CentOS docker containers
+      docker_container:
+        image: tektutor/ansible-centos
+        name: "centos{{item}}"
+        hostname: "centos{{item}}"
+        ports: "300{{item}}:22"
+      with_sequence: count=2
+
+  post_tasks:
+    - debug: msg="This tasks gets executed once all tasks are completed."

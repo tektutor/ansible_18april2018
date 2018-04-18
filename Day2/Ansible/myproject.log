@@ -1,0 +1,1058 @@
+2018-04-17 15:09:45,744 p=24218 u=root |  ubuntu2 | SUCCESS => {
+    "changed": false, 
+    "ping": "pong"
+}
+2018-04-17 15:09:45,830 p=24218 u=root |  ubuntu1 | SUCCESS => {
+    "changed": false, 
+    "ping": "pong"
+}
+2018-04-17 15:10:05,804 p=24218 u=root |  centos1 | SUCCESS => {
+    "changed": false, 
+    "ping": "pong"
+}
+2018-04-17 15:10:06,758 p=24218 u=root |  centos2 | SUCCESS => {
+    "changed": false, 
+    "ping": "pong"
+}
+2018-04-17 15:12:50,792 p=24380 u=root |  PLAY [This playbook will install nginx web server on Ubuntu and CentOS boxes] **
+2018-04-17 15:12:50,827 p=24380 u=root |  TASK [setup] *******************************************************************
+2018-04-17 15:12:51,868 p=24380 u=root |  ok: [ubuntu1]
+2018-04-17 15:12:52,021 p=24380 u=root |  ok: [ubuntu2]
+2018-04-17 15:13:12,489 p=24380 u=root |  ok: [centos1]
+2018-04-17 15:13:12,593 p=24380 u=root |  ok: [centos2]
+2018-04-17 15:13:12,596 p=24380 u=root |  TASK [Install nginx on Ubuntu server] ******************************************
+2018-04-17 15:13:12,668 p=24380 u=root |  skipping: [centos1]
+2018-04-17 15:13:12,676 p=24380 u=root |  skipping: [centos2]
+2018-04-17 15:13:19,575 p=24380 u=root |  ok: [ubuntu2]
+2018-04-17 15:13:20,037 p=24380 u=root |  ok: [ubuntu1]
+2018-04-17 15:13:20,039 p=24380 u=root |  TASK [Install epel-release package in CentOS server] ***************************
+2018-04-17 15:13:20,166 p=24380 u=root |  skipping: [ubuntu1]
+2018-04-17 15:13:20,170 p=24380 u=root |  skipping: [ubuntu2]
+2018-04-17 15:13:21,048 p=24380 u=root |  ok: [centos1]
+2018-04-17 15:13:21,051 p=24380 u=root |  ok: [centos2]
+2018-04-17 15:13:21,057 p=24380 u=root |  TASK [Install nginx on CentOS server] ******************************************
+2018-04-17 15:13:21,166 p=24380 u=root |  skipping: [ubuntu1]
+2018-04-17 15:13:21,169 p=24380 u=root |  skipping: [ubuntu2]
+2018-04-17 15:13:21,819 p=24380 u=root |  ok: [centos2]
+2018-04-17 15:13:21,919 p=24380 u=root |  ok: [centos1]
+2018-04-17 15:13:21,925 p=24380 u=root |  TASK [Configure nginx web root folder in Ubuntu server] ************************
+2018-04-17 15:13:22,032 p=24380 u=root |  skipping: [centos2]
+2018-04-17 15:13:22,040 p=24380 u=root |  skipping: [centos1]
+2018-04-17 15:13:22,881 p=24380 u=root |  ok: [ubuntu2]
+2018-04-17 15:13:22,953 p=24380 u=root |  ok: [ubuntu1]
+2018-04-17 15:13:22,957 p=24380 u=root |  TASK [Configure nginx web root foler in CentOS server] *************************
+2018-04-17 15:13:23,099 p=24380 u=root |  skipping: [ubuntu2]
+2018-04-17 15:13:23,128 p=24380 u=root |  skipping: [ubuntu1]
+2018-04-17 15:13:23,752 p=24380 u=root |  ok: [centos1]
+2018-04-17 15:13:23,773 p=24380 u=root |  ok: [centos2]
+2018-04-17 15:13:23,775 p=24380 u=root |  TASK [Create the web root folder in all servers] *******************************
+2018-04-17 15:13:24,320 p=24380 u=root |  ok: [ubuntu1]
+2018-04-17 15:13:24,425 p=24380 u=root |  ok: [centos1]
+2018-04-17 15:13:24,474 p=24380 u=root |  ok: [ubuntu2]
+2018-04-17 15:13:24,511 p=24380 u=root |  ok: [centos2]
+2018-04-17 15:13:24,514 p=24380 u=root |  TASK [Deploy web page in all servers] ******************************************
+2018-04-17 15:13:25,591 p=24380 u=root |  ok: [ubuntu1]
+2018-04-17 15:13:25,744 p=24380 u=root |  ok: [centos1]
+2018-04-17 15:13:25,837 p=24380 u=root |  ok: [ubuntu2]
+2018-04-17 15:13:25,862 p=24380 u=root |  ok: [centos2]
+2018-04-17 15:13:25,867 p=24380 u=root |  PLAY RECAP *********************************************************************
+2018-04-17 15:13:25,868 p=24380 u=root |  centos1                    : ok=6    changed=0    unreachable=0    failed=0   
+2018-04-17 15:13:25,868 p=24380 u=root |  centos2                    : ok=6    changed=0    unreachable=0    failed=0   
+2018-04-17 15:13:25,868 p=24380 u=root |  ubuntu1                    : ok=5    changed=0    unreachable=0    failed=0   
+2018-04-17 15:13:25,868 p=24380 u=root |  ubuntu2                    : ok=5    changed=0    unreachable=0    failed=0   
+2018-04-17 15:18:31,893 p=25522 u=root |  ubuntu1 | SUCCESS => {
+    "changed": false, 
+    "ping": "pong"
+}
+2018-04-17 15:18:31,931 p=25522 u=root |  ubuntu2 | SUCCESS => {
+    "changed": false, 
+    "ping": "pong"
+}
+2018-04-17 15:18:42,065 p=25522 u=root |   [ERROR]: User interrupted execution
+
+2018-04-17 15:29:26,887 p=27574 u=root |  Encryption successful
+2018-04-17 15:30:30,593 p=27592 u=root |  Decryption successful
+2018-04-17 15:31:00,974 p=27598 u=root |  Encryption successful
+2018-04-17 15:32:51,935 p=27619 u=root |  Decryption successful
+2018-04-17 15:33:04,510 p=27622 u=root |  Encryption successful
+2018-04-17 15:36:11,149 p=27640 u=root |  ERROR! Syntax Error while loading YAML.
+
+
+The error appears to have been in '/root/Training/Day2/Ansible/contacts': line 9, column 10, but may
+be elsewhere in the file depending on the exact syntax problem.
+
+2018-04-17 15:36:55,569 p=27673 u=root |  ERROR! 'var_files' is not a valid attribute for a Play
+
+The error appears to have been in '/root/Training/Day2/Ansible/readvaultcontacts.yml': line 1, column 3, but may
+be elsewhere in the file depending on the exact syntax problem.
+
+The offending line appears to be:
+
+
+- name: Demonstrates use of ansible vault
+  ^ here
+
+2018-04-17 15:37:18,064 p=27679 u=root |  ERROR! Syntax Error while loading YAML.
+
+
+The error appears to have been in '/root/Training/Day2/Ansible/contacts': line 9, column 10, but may
+be elsewhere in the file depending on the exact syntax problem.
+
+2018-04-17 15:38:08,648 p=27687 u=root |  ERROR! [Errno 2] No such file or directory: u'+9'
+2018-04-17 15:38:12,302 p=27692 u=root |  PLAY [Demonstrates use of ansible vault] ***************************************
+2018-04-17 15:38:12,346 p=27692 u=root |  TASK [setup] *******************************************************************
+2018-04-17 15:38:19,680 p=27692 u=root |  ok: [localhost]
+2018-04-17 15:38:19,696 p=27692 u=root |  TASK [Print all the vault contacts] ********************************************
+2018-04-17 15:38:19,821 p=27692 u=root |  ok: [localhost] => (item={'key': u'Nitesh', 'value': {u'mobile': u'543-454-4654', u'name': u'Nitesh Jeganathan'}}) => {
+    "item": {
+        "key": "Nitesh", 
+        "value": {
+            "mobile": "543-454-4654", 
+            "name": "Nitesh Jeganathan"
+        }
+    }, 
+    "msg": "Mobile number of Nitesh Jeganathan is 543-454-4654"
+}
+2018-04-17 15:38:19,829 p=27692 u=root |  ok: [localhost] => (item={'key': u'Jegan', 'value': {u'mobile': u'123-456-7689', u'name': u'Jeganathan Swaminathan'}}) => {
+    "item": {
+        "key": "Jegan", 
+        "value": {
+            "mobile": "123-456-7689", 
+            "name": "Jeganathan Swaminathan"
+        }
+    }, 
+    "msg": "Mobile number of Jeganathan Swaminathan is 123-456-7689"
+}
+2018-04-17 15:38:19,842 p=27692 u=root |  ok: [localhost] => (item={'key': u'Sriram', 'value': {u'mobile': u'343-454-4654', u'name': u'Sriram Jeganathan'}}) => {
+    "item": {
+        "key": "Sriram", 
+        "value": {
+            "mobile": "343-454-4654", 
+            "name": "Sriram Jeganathan"
+        }
+    }, 
+    "msg": "Mobile number of Sriram Jeganathan is 343-454-4654"
+}
+2018-04-17 15:38:19,845 p=27692 u=root |  PLAY RECAP *********************************************************************
+2018-04-17 15:38:19,845 p=27692 u=root |  localhost                  : ok=2    changed=0    unreachable=0    failed=0   
+2018-04-17 15:44:14,635 p=28134 u=root |  ubuntu1 | SUCCESS => {
+    "changed": false, 
+    "ping": "pong"
+}
+2018-04-17 15:44:44,214 p=28205 u=root |  ubuntu1 | SUCCESS => {
+    "changed": false, 
+    "ping": "pong"
+}
+2018-04-17 15:45:29,123 p=28267 u=root |  ubuntu1 | SUCCESS => {
+    "changed": false, 
+    "ping": "pong"
+}
+2018-04-17 15:45:40,176 p=28316 u=root |   __________________________________________
+< PLAY [Demonstrates use of ansible vault] >
+ ------------------------------------------
+        \  ^___^
+         \ (ooo)\_______
+           (___)\       )\/\
+                ||----w |
+                ||     ||
+
+
+2018-04-17 15:45:40,273 p=28316 u=root |   ______________
+< TASK [setup] >
+ --------------
+  \                                  ,+*^^*+___+++_
+   \                           ,*^^^^              )
+    \                       _+*                     ^**+_
+     \                    +^       _ _++*+_+++_,         )
+              _+^^*+_    (     ,+*^ ^          \+_        )
+             {       )  (    ,(    ,_+--+--,      ^)      ^\
+            { (@)    } f   ,(  ,+-^ __*_*_  ^^\_   ^\       )
+           {:;-/    (_+*-+^^^^^+*+*<_ _++_)_    )    )      /
+          ( /  (    (        ,___    ^*+_+* )   <    <      \
+           U _/     )    *--<  ) ^\-----++__)   )    )       )
+            (      )  _(^)^^))  )  )\^^^^^))^*+/    /       /
+          (      /  (_))_^)) )  )  ))^^^^^))^^^)__/     +^^
+         (     ,/    (^))^))  )  ) ))^^^^^^^))^^)       _)
+          *+__+*       (_))^)  ) ) ))^^^^^^))^^^^^)____*^
+          \             \_)^)_)) ))^^^^^^^^^^))^^^^)
+           (_             ^\__^^^^^^^^^^^^))^^^^^^^)
+             ^\___            ^\__^^^^^^))^^^^^^^^)\\
+                  ^^^^^\uuu/^^\uuu/^^^^\^\^\^\^\^\^\^\
+                     ___) >____) >___   ^\_\_\_\_\_\_\)
+                    ^^^//\\_^^//\\_^       ^(\_\_\_\)
+                      ^^^ ^^ ^^^ ^
+
+
+2018-04-17 15:45:43,059 p=28316 u=root |  ok: [localhost]
+2018-04-17 15:45:43,150 p=28316 u=root |   _____________________________________
+< TASK [Print all the vault contacts] >
+ -------------------------------------
+  \
+   \          .
+       ___   //
+     {~._.~}// 
+      ( Y )K/  
+     ()~*~()   
+     (_)-(_)   
+     Luke    
+     Skywalker
+     koala   
+
+
+2018-04-17 15:45:43,225 p=28316 u=root |  ok: [localhost] => (item={'key': u'Jegan', 'value': {u'mobile': u'123-456-7689', u'name': u'Jeganathan Swaminathan'}}) => {
+    "item": {
+        "key": "Jegan", 
+        "value": {
+            "mobile": "123-456-7689", 
+            "name": "Jeganathan Swaminathan"
+        }
+    }, 
+    "msg": "Mobile number of Jeganathan Swaminathan is 123-456-7689"
+}
+2018-04-17 15:45:43,235 p=28316 u=root |  ok: [localhost] => (item={'key': u'Sriram', 'value': {u'mobile': u'343-454-4654', u'name': u'Sriram Jeganathan'}}) => {
+    "item": {
+        "key": "Sriram", 
+        "value": {
+            "mobile": "343-454-4654", 
+            "name": "Sriram Jeganathan"
+        }
+    }, 
+    "msg": "Mobile number of Sriram Jeganathan is 343-454-4654"
+}
+2018-04-17 15:45:43,245 p=28316 u=root |  ok: [localhost] => (item={'key': u'Nitesh', 'value': {u'mobile': u'543-454-4654', u'name': u'Nitesh Jeganathan'}}) => {
+    "item": {
+        "key": "Nitesh", 
+        "value": {
+            "mobile": "543-454-4654", 
+            "name": "Nitesh Jeganathan"
+        }
+    }, 
+    "msg": "Mobile number of Nitesh Jeganathan is 543-454-4654"
+}
+2018-04-17 15:45:43,308 p=28316 u=root |   ____________
+< PLAY RECAP >
+ ------------
+ \     ____________ 
+  \    |__________|
+      /           /\
+     /           /  \
+    /___________/___/|
+    |          |     |
+    |  ==\ /== |     |
+    |   O   O  | \ \ |
+    |     <    |  \ \|
+   /|          |   \ \
+  / |  \_____/ |   / /
+ / /|          |  / /|
+/||\|          | /||\/
+    -------------|   
+        | |    | | 
+       <__/    \__>
+
+
+2018-04-17 15:45:43,308 p=28316 u=root |  localhost                  : ok=2    changed=0    unreachable=0    failed=0   
+2018-04-17 15:46:23,784 p=28708 u=root |  PLAY [Demonstrates use of ansible vault] ***************************************
+2018-04-17 15:46:23,828 p=28708 u=root |  TASK [setup] *******************************************************************
+2018-04-17 15:46:26,905 p=28708 u=root |  ok: [localhost]
+2018-04-17 15:46:26,910 p=28708 u=root |  TASK [Print all the vault contacts] ********************************************
+2018-04-17 15:46:26,974 p=28708 u=root |  ok: [localhost] => (item={'key': u'Jegan', 'value': {u'mobile': u'123-456-7689', u'name': u'Jeganathan Swaminathan'}}) => {
+    "item": {
+        "key": "Jegan", 
+        "value": {
+            "mobile": "123-456-7689", 
+            "name": "Jeganathan Swaminathan"
+        }
+    }, 
+    "msg": "Mobile number of Jeganathan Swaminathan is 123-456-7689"
+}
+2018-04-17 15:46:26,985 p=28708 u=root |  ok: [localhost] => (item={'key': u'Sriram', 'value': {u'mobile': u'343-454-4654', u'name': u'Sriram Jeganathan'}}) => {
+    "item": {
+        "key": "Sriram", 
+        "value": {
+            "mobile": "343-454-4654", 
+            "name": "Sriram Jeganathan"
+        }
+    }, 
+    "msg": "Mobile number of Sriram Jeganathan is 343-454-4654"
+}
+2018-04-17 15:46:26,993 p=28708 u=root |  ok: [localhost] => (item={'key': u'Nitesh', 'value': {u'mobile': u'543-454-4654', u'name': u'Nitesh Jeganathan'}}) => {
+    "item": {
+        "key": "Nitesh", 
+        "value": {
+            "mobile": "543-454-4654", 
+            "name": "Nitesh Jeganathan"
+        }
+    }, 
+    "msg": "Mobile number of Nitesh Jeganathan is 543-454-4654"
+}
+2018-04-17 15:46:27,003 p=28708 u=root |  PLAY RECAP *********************************************************************
+2018-04-17 15:46:27,004 p=28708 u=root |  localhost                  : ok=2    changed=0    unreachable=0    failed=0   
+2018-04-17 15:47:51,722 p=29134 u=root |  Decryption successful
+2018-04-17 16:02:05,198 p=29174 u=root |  PLAY [Demonstrates use of register variable] ***********************************
+2018-04-17 16:02:05,225 p=29174 u=root |  TASK [setup] *******************************************************************
+2018-04-17 16:02:08,072 p=29174 u=root |  ok: [localhost]
+2018-04-17 16:02:08,077 p=29174 u=root |  TASK [List the directory contents] *********************************************
+2018-04-17 16:02:08,391 p=29174 u=root |  changed: [localhost]
+2018-04-17 16:02:08,393 p=29174 u=root |  PLAY RECAP *********************************************************************
+2018-04-17 16:02:08,393 p=29174 u=root |  localhost                  : ok=2    changed=1    unreachable=0    failed=0   
+2018-04-17 16:02:57,311 p=29578 u=root |  PLAY [Demonstrates use of register variable] ***********************************
+2018-04-17 16:02:57,337 p=29578 u=root |  TASK [setup] *******************************************************************
+2018-04-17 16:03:00,287 p=29578 u=root |  ok: [localhost]
+2018-04-17 16:03:00,290 p=29578 u=root |  TASK [List the directory contents] *********************************************
+2018-04-17 16:03:00,723 p=29578 u=root |  changed: [localhost]
+2018-04-17 16:03:00,727 p=29578 u=root |  TASK [Print the output of the previous task] ***********************************
+2018-04-17 16:03:00,821 p=29578 u=root |  ok: [localhost] => {
+    "output": {
+        "changed": true, 
+        "cmd": "ls -l", 
+        "delta": "0:00:00.011008", 
+        "end": "2018-04-17 16:03:00.697423", 
+        "rc": 0, 
+        "start": "2018-04-17 16:03:00.686415", 
+        "stderr": "", 
+        "stdout": "total 64\n-rw-r--r-- 1 root root   261 Apr 17 15:37 \\\n-rw-r--r-- 1 root root   214 Apr 17 15:44 ansible.cfg\ndrwxr-xr-x 4 root root  4096 Apr 17 15:25 AnsibleDirectoryStructure\n-rw------- 1 root root   209 Apr 17 15:47 contacts\n-rw-r--r-- 1 root root   466 Apr 17 14:15 default_centos.conf\n-rw-r--r-- 1 root root  2126 Apr 17 14:14 default_ubuntu\n-rw-r--r-- 1 root root   304 Apr 17 12:01 hosts\n-rw-r--r-- 1 root root   393 Apr 17 12:20 index.html.j2\n-rw-r--r-- 1 root root    32 Apr 17 12:22 installnginx.retry\n-rw-r--r-- 1 root root  1958 Apr 17 14:17 installnginx.yml\n-rw-r--r-- 1 root root 14473 Apr 17 16:03 myproject.log\n-rw-r--r-- 1 root root   261 Apr 17 15:37 readvaultcontacts.yml\n-rw-r--r-- 1 root root   228 Apr 17 16:02 registervariable.yml", 
+        "stdout_lines": [
+            "total 64", 
+            "-rw-r--r-- 1 root root   261 Apr 17 15:37 \\", 
+            "-rw-r--r-- 1 root root   214 Apr 17 15:44 ansible.cfg", 
+            "drwxr-xr-x 4 root root  4096 Apr 17 15:25 AnsibleDirectoryStructure", 
+            "-rw------- 1 root root   209 Apr 17 15:47 contacts", 
+            "-rw-r--r-- 1 root root   466 Apr 17 14:15 default_centos.conf", 
+            "-rw-r--r-- 1 root root  2126 Apr 17 14:14 default_ubuntu", 
+            "-rw-r--r-- 1 root root   304 Apr 17 12:01 hosts", 
+            "-rw-r--r-- 1 root root   393 Apr 17 12:20 index.html.j2", 
+            "-rw-r--r-- 1 root root    32 Apr 17 12:22 installnginx.retry", 
+            "-rw-r--r-- 1 root root  1958 Apr 17 14:17 installnginx.yml", 
+            "-rw-r--r-- 1 root root 14473 Apr 17 16:03 myproject.log", 
+            "-rw-r--r-- 1 root root   261 Apr 17 15:37 readvaultcontacts.yml", 
+            "-rw-r--r-- 1 root root   228 Apr 17 16:02 registervariable.yml"
+        ], 
+        "warnings": []
+    }
+}
+2018-04-17 16:03:00,826 p=29578 u=root |  PLAY RECAP *********************************************************************
+2018-04-17 16:03:00,826 p=29578 u=root |  localhost                  : ok=3    changed=1    unreachable=0    failed=0   
+2018-04-17 16:06:12,896 p=29985 u=root |  PLAY [Demonstrates use of register variable] ***********************************
+2018-04-17 16:06:12,938 p=29985 u=root |  TASK [setup] *******************************************************************
+2018-04-17 16:06:15,839 p=29985 u=root |  ok: [localhost]
+2018-04-17 16:06:15,842 p=29985 u=root |  TASK [List the directory contents] *********************************************
+2018-04-17 16:06:16,184 p=29985 u=root |  changed: [localhost]
+2018-04-17 16:06:16,189 p=29985 u=root |  TASK [Print the output of the previous task] ***********************************
+2018-04-17 16:06:16,298 p=29985 u=root |  ok: [localhost] => {
+    "output": {
+        "changed": true, 
+        "cmd": "ls -l", 
+        "delta": "0:00:00.004579", 
+        "end": "2018-04-17 16:06:16.155547", 
+        "rc": 0, 
+        "start": "2018-04-17 16:06:16.150968", 
+        "stderr": "", 
+        "stdout": "total 72\n-rw-r--r-- 1 root root   261 Apr 17 15:37 \\\n-rw-r--r-- 1 root root   214 Apr 17 15:44 ansible.cfg\ndrwxr-xr-x 4 root root  4096 Apr 17 15:25 AnsibleDirectoryStructure\n-rw------- 1 root root   209 Apr 17 15:47 contacts\n-rw-r--r-- 1 root root   466 Apr 17 14:15 default_centos.conf\n-rw-r--r-- 1 root root  2126 Apr 17 14:14 default_ubuntu\n-rw-r--r-- 1 root root   304 Apr 17 12:01 hosts\n-rw-r--r-- 1 root root   393 Apr 17 12:20 index.html.j2\n-rw-r--r-- 1 root root    32 Apr 17 12:22 installnginx.retry\n-rw-r--r-- 1 root root  1958 Apr 17 14:17 installnginx.yml\n-rw-r--r-- 1 root root 17463 Apr 17 16:06 myproject.log\n-rw-r--r-- 1 root root   261 Apr 17 15:37 readvaultcontacts.yml\n-rw-r--r-- 1 root root   259 Apr 17 16:06 registervariable.yml", 
+        "stdout_lines": [
+            "total 72", 
+            "-rw-r--r-- 1 root root   261 Apr 17 15:37 \\", 
+            "-rw-r--r-- 1 root root   214 Apr 17 15:44 ansible.cfg", 
+            "drwxr-xr-x 4 root root  4096 Apr 17 15:25 AnsibleDirectoryStructure", 
+            "-rw------- 1 root root   209 Apr 17 15:47 contacts", 
+            "-rw-r--r-- 1 root root   466 Apr 17 14:15 default_centos.conf", 
+            "-rw-r--r-- 1 root root  2126 Apr 17 14:14 default_ubuntu", 
+            "-rw-r--r-- 1 root root   304 Apr 17 12:01 hosts", 
+            "-rw-r--r-- 1 root root   393 Apr 17 12:20 index.html.j2", 
+            "-rw-r--r-- 1 root root    32 Apr 17 12:22 installnginx.retry", 
+            "-rw-r--r-- 1 root root  1958 Apr 17 14:17 installnginx.yml", 
+            "-rw-r--r-- 1 root root 17463 Apr 17 16:06 myproject.log", 
+            "-rw-r--r-- 1 root root   261 Apr 17 15:37 readvaultcontacts.yml", 
+            "-rw-r--r-- 1 root root   259 Apr 17 16:06 registervariable.yml"
+        ], 
+        "warnings": []
+    }
+}
+2018-04-17 16:06:16,305 p=29985 u=root |  PLAY RECAP *********************************************************************
+2018-04-17 16:06:16,306 p=29985 u=root |  localhost                  : ok=3    changed=1    unreachable=0    failed=0   
+2018-04-17 16:06:36,158 p=30391 u=root |  PLAY [Demonstrates use of register variable] ***********************************
+2018-04-17 16:06:36,197 p=30391 u=root |  TASK [setup] *******************************************************************
+2018-04-17 16:06:39,104 p=30391 u=root |  ok: [localhost]
+2018-04-17 16:06:39,109 p=30391 u=root |  TASK [List the directory contents] *********************************************
+2018-04-17 16:06:39,528 p=30391 u=root |  fatal: [localhost]: FAILED! => {"changed": true, "cmd": "asdfdsls -l", "delta": "0:00:00.002899", "end": "2018-04-17 16:06:39.500008", "failed": true, "rc": 127, "start": "2018-04-17 16:06:39.497109", "stderr": "/bin/sh: 1: asdfdsls: not found", "stdout": "", "stdout_lines": [], "warnings": []}
+2018-04-17 16:06:39,530 p=30391 u=root |  	to retry, use: --limit @/root/Training/Day2/Ansible/registervariable.retry
+
+2018-04-17 16:06:39,530 p=30391 u=root |  PLAY RECAP *********************************************************************
+2018-04-17 16:06:39,531 p=30391 u=root |  localhost                  : ok=1    changed=0    unreachable=0    failed=1   
+2018-04-17 16:06:58,991 p=30794 u=root |  PLAY [Demonstrates use of register variable] ***********************************
+2018-04-17 16:06:59,023 p=30794 u=root |  TASK [setup] *******************************************************************
+2018-04-17 16:07:01,886 p=30794 u=root |  ok: [localhost]
+2018-04-17 16:07:01,891 p=30794 u=root |  TASK [List the directory contents] *********************************************
+2018-04-17 16:07:02,305 p=30794 u=root |  fatal: [localhost]: FAILED! => {"changed": true, "cmd": "asdfdsls -l", "delta": "0:00:00.004264", "end": "2018-04-17 16:07:02.277213", "failed": true, "rc": 127, "start": "2018-04-17 16:07:02.272949", "stderr": "/bin/sh: 1: asdfdsls: not found", "stdout": "", "stdout_lines": [], "warnings": []}
+2018-04-17 16:07:02,306 p=30794 u=root |  ...ignoring
+2018-04-17 16:07:02,310 p=30794 u=root |  TASK [Print the output of the previous task] ***********************************
+2018-04-17 16:07:02,369 p=30794 u=root |  skipping: [localhost]
+2018-04-17 16:07:02,374 p=30794 u=root |  PLAY RECAP *********************************************************************
+2018-04-17 16:07:02,375 p=30794 u=root |  localhost                  : ok=2    changed=1    unreachable=0    failed=0   
+2018-04-17 16:08:40,241 p=31201 u=root |  ERROR! failed at splitting arguments, either an unbalanced jinja2 block or quotes: msg="###### List command failed
+
+The error appears to have been in '/root/Training/Day2/Ansible/registervariable.yml': line 13, column 6, but may
+be elsewhere in the file depending on the exact syntax problem.
+
+The offending line appears to be:
+
+
+   - name: Execute this task only if the List task failed
+     ^ here
+
+2018-04-17 16:09:19,726 p=31206 u=root |  PLAY [Demonstrates use of register variable] ***********************************
+2018-04-17 16:09:19,753 p=31206 u=root |  TASK [setup] *******************************************************************
+2018-04-17 16:09:22,837 p=31206 u=root |  ok: [localhost]
+2018-04-17 16:09:22,842 p=31206 u=root |  TASK [List the directory contents] *********************************************
+2018-04-17 16:09:23,177 p=31206 u=root |  fatal: [localhost]: FAILED! => {"changed": true, "cmd": "asdfdsls -l", "delta": "0:00:00.003142", "end": "2018-04-17 16:09:23.130957", "failed": true, "rc": 127, "start": "2018-04-17 16:09:23.127815", "stderr": "/bin/sh: 1: asdfdsls: not found", "stdout": "", "stdout_lines": [], "warnings": []}
+2018-04-17 16:09:23,177 p=31206 u=root |  ...ignoring
+2018-04-17 16:09:23,185 p=31206 u=root |  TASK [Print the output of the previous task] ***********************************
+2018-04-17 16:09:23,226 p=31206 u=root |  skipping: [localhost]
+2018-04-17 16:09:23,230 p=31206 u=root |  TASK [Execute this task only if the List task failed] **************************
+2018-04-17 16:09:23,307 p=31206 u=root |  ok: [localhost] => {
+    "msg": "List command failed"
+}
+2018-04-17 16:09:23,319 p=31206 u=root |  PLAY RECAP *********************************************************************
+2018-04-17 16:09:23,319 p=31206 u=root |  localhost                  : ok=3    changed=1    unreachable=0    failed=0   
+2018-04-17 16:15:21,751 p=31616 u=root |  PLAY [Demonstrates use of register variable] ***********************************
+2018-04-17 16:15:21,792 p=31616 u=root |  TASK [setup] *******************************************************************
+2018-04-17 16:15:24,825 p=31616 u=root |  ok: [localhost]
+2018-04-17 16:15:24,829 p=31616 u=root |  TASK [List the directory contents] *********************************************
+2018-04-17 16:15:24,901 p=31616 u=root |  skipping: [localhost]
+2018-04-17 16:15:24,910 p=31616 u=root |  TASK [Print the output of the previous task] ***********************************
+2018-04-17 16:15:25,002 p=31616 u=root |  ok: [localhost] => {
+    "output": {
+        "changed": false, 
+        "skip_reason": "Conditional check failed", 
+        "skipped": true
+    }
+}
+2018-04-17 16:15:25,015 p=31616 u=root |  TASK [Execute this task only if the List task failed] **************************
+2018-04-17 16:15:25,074 p=31616 u=root |  skipping: [localhost]
+2018-04-17 16:15:25,079 p=31616 u=root |  TASK [Execute this task only when the List task is skipped] ********************
+2018-04-17 16:15:25,153 p=31616 u=root |  ok: [localhost] => {
+    "msg": "List task is skipped"
+}
+2018-04-17 16:15:25,161 p=31616 u=root |  PLAY RECAP *********************************************************************
+2018-04-17 16:15:25,162 p=31616 u=root |  localhost                  : ok=3    changed=0    unreachable=0    failed=0   
+2018-04-17 16:16:22,006 p=32043 u=root |  PLAY [Demonstrates use of register variable] ***********************************
+2018-04-17 16:16:22,043 p=32043 u=root |  TASK [setup] *******************************************************************
+2018-04-17 16:16:25,195 p=32043 u=root |  ok: [localhost]
+2018-04-17 16:16:25,199 p=32043 u=root |  TASK [List the directory contents] *********************************************
+2018-04-17 16:16:25,271 p=32043 u=root |  skipping: [localhost]
+2018-04-17 16:16:25,276 p=32043 u=root |  TASK [Print the output of the previous task] ***********************************
+2018-04-17 16:16:25,339 p=32043 u=root |  ok: [localhost] => {
+    "output": {
+        "changed": false, 
+        "skip_reason": "Conditional check failed", 
+        "skipped": true
+    }
+}
+2018-04-17 16:16:25,344 p=32043 u=root |  TASK [Execute this task only if the List task failed] **************************
+2018-04-17 16:16:25,459 p=32043 u=root |  skipping: [localhost]
+2018-04-17 16:16:25,463 p=32043 u=root |  TASK [Execute this task only when the List task is skipped] ********************
+2018-04-17 16:16:25,550 p=32043 u=root |  ok: [localhost] => {
+    "msg": "List task is skipped"
+}
+2018-04-17 16:16:25,555 p=32043 u=root |  PLAY RECAP *********************************************************************
+2018-04-17 16:16:25,556 p=32043 u=root |  localhost                  : ok=3    changed=0    unreachable=0    failed=0   
+2018-04-17 16:16:54,158 p=32503 u=root |  PLAY [Demonstrates use of register variable] ***********************************
+2018-04-17 16:16:54,187 p=32503 u=root |  TASK [setup] *******************************************************************
+2018-04-17 16:16:57,575 p=32503 u=root |  ok: [localhost]
+2018-04-17 16:16:57,581 p=32503 u=root |  TASK [List the directory contents] *********************************************
+2018-04-17 16:16:57,721 p=32503 u=root |  fatal: [localhost]: FAILED! => {"failed": true, "msg": "The conditional check 'skipTask == no' failed. The error was: error while evaluating conditional (skipTask == no): 'no' is undefined\n\nThe error appears to have been in '/root/Training/Day2/Ansible/registervariable.yml': line 9, column 6, but may\nbe elsewhere in the file depending on the exact syntax problem.\n\nThe offending line appears to be:\n\n  tasks:\n   - name: List the directory contents\n     ^ here\n"}
+2018-04-17 16:16:57,722 p=32503 u=root |  ...ignoring
+2018-04-17 16:16:57,726 p=32503 u=root |  TASK [Print the output of the previous task] ***********************************
+2018-04-17 16:16:57,789 p=32503 u=root |  skipping: [localhost]
+2018-04-17 16:16:57,793 p=32503 u=root |  TASK [Execute this task only if the List task failed] **************************
+2018-04-17 16:16:57,853 p=32503 u=root |  ok: [localhost] => {
+    "msg": "List command failed"
+}
+2018-04-17 16:16:57,859 p=32503 u=root |  TASK [Execute this task only when the List task is skipped] ********************
+2018-04-17 16:16:57,929 p=32503 u=root |  skipping: [localhost]
+2018-04-17 16:16:57,939 p=32503 u=root |  PLAY RECAP *********************************************************************
+2018-04-17 16:16:57,940 p=32503 u=root |  localhost                  : ok=3    changed=0    unreachable=0    failed=0   
+2018-04-17 16:17:19,124 p=432 u=root |  PLAY [Demonstrates use of register variable] ***********************************
+2018-04-17 16:17:19,160 p=432 u=root |  TASK [setup] *******************************************************************
+2018-04-17 16:17:22,102 p=432 u=root |  ok: [localhost]
+2018-04-17 16:17:22,105 p=432 u=root |  TASK [List the directory contents] *********************************************
+2018-04-17 16:17:22,526 p=432 u=root |  changed: [localhost]
+2018-04-17 16:17:22,530 p=432 u=root |  TASK [Print the output of the previous task] ***********************************
+2018-04-17 16:17:22,631 p=432 u=root |  ok: [localhost] => {
+    "output": {
+        "changed": true, 
+        "cmd": "ls -l", 
+        "delta": "0:00:00.006034", 
+        "end": "2018-04-17 16:17:22.496551", 
+        "rc": 0, 
+        "start": "2018-04-17 16:17:22.490517", 
+        "stderr": "", 
+        "stdout": "total 88\n-rw-r--r-- 1 root root   261 Apr 17 15:37 \\\n-rw-r--r-- 1 root root   214 Apr 17 15:44 ansible.cfg\ndrwxr-xr-x 4 root root  4096 Apr 17 15:25 AnsibleDirectoryStructure\n-rw------- 1 root root   209 Apr 17 15:47 contacts\n-rw-r--r-- 1 root root   466 Apr 17 14:15 default_centos.conf\n-rw-r--r-- 1 root root  2126 Apr 17 14:14 default_ubuntu\n-rw-r--r-- 1 root root   304 Apr 17 12:01 hosts\n-rw-r--r-- 1 root root   393 Apr 17 12:20 index.html.j2\n-rw-r--r-- 1 root root    32 Apr 17 12:22 installnginx.retry\n-rw-r--r-- 1 root root  1958 Apr 17 14:17 installnginx.yml\n-rw-r--r-- 1 root root 29488 Apr 17 16:17 myproject.log\n-rw-r--r-- 1 root root   261 Apr 17 15:37 readvaultcontacts.yml\n-rw-r--r-- 1 root root    10 Apr 17 16:06 registervariable.retry\n-rw-r--r-- 1 root root   606 Apr 17 16:17 registervariable.yml", 
+        "stdout_lines": [
+            "total 88", 
+            "-rw-r--r-- 1 root root   261 Apr 17 15:37 \\", 
+            "-rw-r--r-- 1 root root   214 Apr 17 15:44 ansible.cfg", 
+            "drwxr-xr-x 4 root root  4096 Apr 17 15:25 AnsibleDirectoryStructure", 
+            "-rw------- 1 root root   209 Apr 17 15:47 contacts", 
+            "-rw-r--r-- 1 root root   466 Apr 17 14:15 default_centos.conf", 
+            "-rw-r--r-- 1 root root  2126 Apr 17 14:14 default_ubuntu", 
+            "-rw-r--r-- 1 root root   304 Apr 17 12:01 hosts", 
+            "-rw-r--r-- 1 root root   393 Apr 17 12:20 index.html.j2", 
+            "-rw-r--r-- 1 root root    32 Apr 17 12:22 installnginx.retry", 
+            "-rw-r--r-- 1 root root  1958 Apr 17 14:17 installnginx.yml", 
+            "-rw-r--r-- 1 root root 29488 Apr 17 16:17 myproject.log", 
+            "-rw-r--r-- 1 root root   261 Apr 17 15:37 readvaultcontacts.yml", 
+            "-rw-r--r-- 1 root root    10 Apr 17 16:06 registervariable.retry", 
+            "-rw-r--r-- 1 root root   606 Apr 17 16:17 registervariable.yml"
+        ], 
+        "warnings": []
+    }
+}
+2018-04-17 16:17:22,636 p=432 u=root |  TASK [Execute this task only if the List task failed] **************************
+2018-04-17 16:17:22,701 p=432 u=root |  skipping: [localhost]
+2018-04-17 16:17:22,723 p=432 u=root |  TASK [Execute this task only when the List task is skipped] ********************
+2018-04-17 16:17:22,783 p=432 u=root |  skipping: [localhost]
+2018-04-17 16:17:22,785 p=432 u=root |  PLAY RECAP *********************************************************************
+2018-04-17 16:17:22,785 p=432 u=root |  localhost                  : ok=3    changed=1    unreachable=0    failed=0   
+2018-04-17 16:20:59,320 p=862 u=root |  PLAY [Demonstrates use of register variable] ***********************************
+2018-04-17 16:20:59,345 p=862 u=root |  TASK [setup] *******************************************************************
+2018-04-17 16:21:02,597 p=862 u=root |  ok: [localhost]
+2018-04-17 16:21:02,602 p=862 u=root |  TASK [List the directory contents] *********************************************
+2018-04-17 16:21:02,649 p=862 u=root |  skipping: [localhost]
+2018-04-17 16:21:02,655 p=862 u=root |  TASK [Print the output of the previous task] ***********************************
+2018-04-17 16:21:02,705 p=862 u=root |  ok: [localhost] => {
+    "output": {
+        "changed": false, 
+        "skip_reason": "Conditional check failed", 
+        "skipped": true
+    }
+}
+2018-04-17 16:21:02,710 p=862 u=root |  TASK [Execute this task only if the List task failed] **************************
+2018-04-17 16:21:02,768 p=862 u=root |  skipping: [localhost]
+2018-04-17 16:21:02,772 p=862 u=root |  TASK [Execute this task only when the List task is skipped] ********************
+2018-04-17 16:21:02,906 p=862 u=root |  ok: [localhost] => {
+    "msg": "List task is skipped"
+}
+2018-04-17 16:21:02,908 p=862 u=root |  PLAY RECAP *********************************************************************
+2018-04-17 16:21:02,909 p=862 u=root |  localhost                  : ok=3    changed=0    unreachable=0    failed=0   
+2018-04-17 16:23:33,998 p=1283 u=root |  PLAY [Demonstrates use of register variable] ***********************************
+2018-04-17 16:23:34,034 p=1283 u=root |  TASK [setup] *******************************************************************
+2018-04-17 16:23:36,878 p=1283 u=root |  ok: [localhost]
+2018-04-17 16:23:36,881 p=1283 u=root |  TASK [List the directory contents] *********************************************
+2018-04-17 16:23:37,221 p=1283 u=root |  changed: [localhost]
+2018-04-17 16:23:37,225 p=1283 u=root |  TASK [Print the output of the previous task] ***********************************
+2018-04-17 16:23:37,357 p=1283 u=root |  ok: [localhost] => {
+    "output": {
+        "changed": true, 
+        "cmd": "ls -l", 
+        "delta": "0:00:00.004766", 
+        "end": "2018-04-17 16:23:37.198369", 
+        "rc": 0, 
+        "start": "2018-04-17 16:23:37.193603", 
+        "stderr": "", 
+        "stdout": "total 92\n-rw-r--r-- 1 root root   261 Apr 17 15:37 \\\n-rw-r--r-- 1 root root   214 Apr 17 15:44 ansible.cfg\ndrwxr-xr-x 4 root root  4096 Apr 17 15:25 AnsibleDirectoryStructure\n-rw------- 1 root root   209 Apr 17 15:47 contacts\n-rw-r--r-- 1 root root   466 Apr 17 14:15 default_centos.conf\n-rw-r--r-- 1 root root  2126 Apr 17 14:14 default_ubuntu\n-rw-r--r-- 1 root root   304 Apr 17 12:01 hosts\n-rw-r--r-- 1 root root   393 Apr 17 12:20 index.html.j2\n-rw-r--r-- 1 root root    32 Apr 17 12:22 installnginx.retry\n-rw-r--r-- 1 root root  1958 Apr 17 14:17 installnginx.yml\n-rw-r--r-- 1 root root 34408 Apr 17 16:23 myproject.log\n-rw-r--r-- 1 root root   261 Apr 17 15:37 readvaultcontacts.yml\n-rw-r--r-- 1 root root    10 Apr 17 16:06 registervariable.retry\n-rw-r--r-- 1 root root   606 Apr 17 16:23 registervariable.yml", 
+        "stdout_lines": [
+            "total 92", 
+            "-rw-r--r-- 1 root root   261 Apr 17 15:37 \\", 
+            "-rw-r--r-- 1 root root   214 Apr 17 15:44 ansible.cfg", 
+            "drwxr-xr-x 4 root root  4096 Apr 17 15:25 AnsibleDirectoryStructure", 
+            "-rw------- 1 root root   209 Apr 17 15:47 contacts", 
+            "-rw-r--r-- 1 root root   466 Apr 17 14:15 default_centos.conf", 
+            "-rw-r--r-- 1 root root  2126 Apr 17 14:14 default_ubuntu", 
+            "-rw-r--r-- 1 root root   304 Apr 17 12:01 hosts", 
+            "-rw-r--r-- 1 root root   393 Apr 17 12:20 index.html.j2", 
+            "-rw-r--r-- 1 root root    32 Apr 17 12:22 installnginx.retry", 
+            "-rw-r--r-- 1 root root  1958 Apr 17 14:17 installnginx.yml", 
+            "-rw-r--r-- 1 root root 34408 Apr 17 16:23 myproject.log", 
+            "-rw-r--r-- 1 root root   261 Apr 17 15:37 readvaultcontacts.yml", 
+            "-rw-r--r-- 1 root root    10 Apr 17 16:06 registervariable.retry", 
+            "-rw-r--r-- 1 root root   606 Apr 17 16:23 registervariable.yml"
+        ], 
+        "warnings": []
+    }
+}
+2018-04-17 16:23:37,369 p=1283 u=root |  TASK [Execute this task only if the List task failed] **************************
+2018-04-17 16:23:37,420 p=1283 u=root |  skipping: [localhost]
+2018-04-17 16:23:37,425 p=1283 u=root |  TASK [Execute this task only when the List task is skipped] ********************
+2018-04-17 16:23:37,505 p=1283 u=root |  skipping: [localhost]
+2018-04-17 16:23:37,513 p=1283 u=root |  PLAY RECAP *********************************************************************
+2018-04-17 16:23:37,514 p=1283 u=root |  localhost                  : ok=3    changed=1    unreachable=0    failed=0   
+2018-04-17 16:52:59,419 p=1814 u=root |  PLAY [Demonstrates simple loops in ansible] ************************************
+2018-04-17 16:52:59,447 p=1814 u=root |  TASK [setup] *******************************************************************
+2018-04-17 16:53:02,441 p=1814 u=root |  ok: [localhost]
+2018-04-17 16:53:02,445 p=1814 u=root |  TASK [Print all the list values] ***********************************************
+2018-04-17 16:53:02,503 p=1814 u=root |  ok: [localhost] => (item=tree vim default-jdk maven docker.io ansible) => {
+    "item": "tree vim default-jdk maven docker.io ansible", 
+    "msg": "tree vim default-jdk maven docker.io ansible"
+}
+2018-04-17 16:53:02,509 p=1814 u=root |  PLAY RECAP *********************************************************************
+2018-04-17 16:53:02,509 p=1814 u=root |  localhost                  : ok=2    changed=0    unreachable=0    failed=0   
+2018-04-17 16:54:41,381 p=2233 u=root |  PLAY [Demonstrates simple loops in ansible] ************************************
+2018-04-17 16:54:41,406 p=2233 u=root |  TASK [setup] *******************************************************************
+2018-04-17 16:54:44,669 p=2233 u=root |  ok: [localhost]
+2018-04-17 16:54:44,674 p=2233 u=root |  TASK [Print all the list values] ***********************************************
+2018-04-17 16:54:44,788 p=2233 u=root |  ok: [localhost] => (item=tree vim default-jdk maven docker.io ansible) => {
+    "item": "tree vim default-jdk maven docker.io ansible"
+}
+2018-04-17 16:54:44,793 p=2233 u=root |  PLAY RECAP *********************************************************************
+2018-04-17 16:54:44,793 p=2233 u=root |  localhost                  : ok=2    changed=0    unreachable=0    failed=0   
+2018-04-17 16:55:10,113 p=2618 u=root |  PLAY [Demonstrates simple loops in ansible] ************************************
+2018-04-17 16:55:10,138 p=2618 u=root |  TASK [setup] *******************************************************************
+2018-04-17 16:55:12,988 p=2618 u=root |  ok: [localhost]
+2018-04-17 16:55:12,992 p=2618 u=root |  TASK [Print all the list values] ***********************************************
+2018-04-17 16:55:13,069 p=2618 u=root |  ok: [localhost] => (item=tree) => {
+    "item": "tree"
+}
+2018-04-17 16:55:13,079 p=2618 u=root |  ok: [localhost] => (item=vim) => {
+    "item": "vim"
+}
+2018-04-17 16:55:13,083 p=2618 u=root |  ok: [localhost] => (item=default-jdk) => {
+    "item": "default-jdk"
+}
+2018-04-17 16:55:13,093 p=2618 u=root |  ok: [localhost] => (item=maven) => {
+    "item": "maven"
+}
+2018-04-17 16:55:13,096 p=2618 u=root |  ok: [localhost] => (item=docker.io) => {
+    "item": "docker.io"
+}
+2018-04-17 16:55:13,111 p=2618 u=root |  ok: [localhost] => (item=ansible) => {
+    "item": "ansible"
+}
+2018-04-17 16:55:13,114 p=2618 u=root |  PLAY RECAP *********************************************************************
+2018-04-17 16:55:13,115 p=2618 u=root |  localhost                  : ok=2    changed=0    unreachable=0    failed=0   
+2018-04-17 17:03:16,670 p=3023 u=root |  PLAY [Demonstrates use of sequence loop] ***************************************
+2018-04-17 17:03:16,702 p=3023 u=root |  TASK [setup] *******************************************************************
+2018-04-17 17:03:19,475 p=3023 u=root |  ok: [localhost]
+2018-04-17 17:03:19,484 p=3023 u=root |  TASK [Print all the values in the sequence] ************************************
+2018-04-17 17:03:19,549 p=3023 u=root |  ok: [localhost] => (item=2) => {
+    "item": "2"
+}
+2018-04-17 17:03:19,553 p=3023 u=root |  ok: [localhost] => (item=1) => {
+    "item": "1"
+}
+2018-04-17 17:03:19,557 p=3023 u=root |  ok: [localhost] => (item=3) => {
+    "item": "3"
+}
+2018-04-17 17:03:19,577 p=3023 u=root |  ok: [localhost] => (item=4) => {
+    "item": "4"
+}
+2018-04-17 17:03:19,586 p=3023 u=root |  ok: [localhost] => (item=6) => {
+    "item": "6"
+}
+2018-04-17 17:03:19,593 p=3023 u=root |  ok: [localhost] => (item=8) => {
+    "item": "8"
+}
+2018-04-17 17:03:19,602 p=3023 u=root |  ok: [localhost] => (item=9) => {
+    "item": "9"
+}
+2018-04-17 17:03:19,606 p=3023 u=root |  ok: [localhost] => (item=10) => {
+    "item": "10"
+}
+2018-04-17 17:03:19,609 p=3023 u=root |  ok: [localhost] => (item=7) => {
+    "item": "7"
+}
+2018-04-17 17:03:19,612 p=3023 u=root |  ok: [localhost] => (item=5) => {
+    "item": "5"
+}
+2018-04-17 17:03:19,615 p=3023 u=root |  PLAY RECAP *********************************************************************
+2018-04-17 17:03:19,615 p=3023 u=root |  localhost                  : ok=2    changed=0    unreachable=0    failed=0   
+2018-04-17 17:04:48,609 p=3409 u=root |  PLAY [Demonstrates use of sequence loop] ***************************************
+2018-04-17 17:04:48,657 p=3409 u=root |  TASK [setup] *******************************************************************
+2018-04-17 17:04:51,493 p=3409 u=root |  ok: [localhost]
+2018-04-17 17:04:51,503 p=3409 u=root |  TASK [Print all the values in the sequence] ************************************
+2018-04-17 17:04:51,543 p=3409 u=root |  ok: [localhost] => (item=1) => {
+    "item": "1"
+}
+2018-04-17 17:04:51,571 p=3409 u=root |  ok: [localhost] => (item=2) => {
+    "item": "2"
+}
+2018-04-17 17:04:51,589 p=3409 u=root |  ok: [localhost] => (item=4) => {
+    "item": "4"
+}
+2018-04-17 17:04:51,593 p=3409 u=root |  ok: [localhost] => (item=5) => {
+    "item": "5"
+}
+2018-04-17 17:04:51,601 p=3409 u=root |  ok: [localhost] => (item=3) => {
+    "item": "3"
+}
+2018-04-17 17:04:51,610 p=3409 u=root |  ok: [localhost] => (item=6) => {
+    "item": "6"
+}
+2018-04-17 17:04:51,621 p=3409 u=root |  ok: [localhost] => (item=7) => {
+    "item": "7"
+}
+2018-04-17 17:04:51,636 p=3409 u=root |  ok: [localhost] => (item=8) => {
+    "item": "8"
+}
+2018-04-17 17:04:51,643 p=3409 u=root |  ok: [localhost] => (item=9) => {
+    "item": "9"
+}
+2018-04-17 17:04:51,653 p=3409 u=root |  ok: [localhost] => (item=10) => {
+    "item": "10"
+}
+2018-04-17 17:04:51,655 p=3409 u=root |  PLAY RECAP *********************************************************************
+2018-04-17 17:04:51,656 p=3409 u=root |  localhost                  : ok=2    changed=0    unreachable=0    failed=0   
+2018-04-17 17:06:23,617 p=3802 u=root |  PLAY [Demonstrates use of sequence loop] ***************************************
+2018-04-17 17:06:23,648 p=3802 u=root |  TASK [setup] *******************************************************************
+2018-04-17 17:06:27,019 p=3802 u=root |  ok: [localhost]
+2018-04-17 17:06:27,024 p=3802 u=root |  TASK [Print all the values in the sequence] ************************************
+2018-04-17 17:06:27,110 p=3802 u=root |  ok: [localhost] => (item=1) => {
+    "item": "1"
+}
+2018-04-17 17:06:27,131 p=3802 u=root |  ok: [localhost] => (item=3) => {
+    "item": "3"
+}
+2018-04-17 17:06:27,141 p=3802 u=root |  ok: [localhost] => (item=2) => {
+    "item": "2"
+}
+2018-04-17 17:06:27,149 p=3802 u=root |  ok: [localhost] => (item=4) => {
+    "item": "4"
+}
+2018-04-17 17:06:27,161 p=3802 u=root |  ok: [localhost] => (item=5) => {
+    "item": "5"
+}
+2018-04-17 17:06:27,168 p=3802 u=root |  ok: [localhost] => (item=6) => {
+    "item": "6"
+}
+2018-04-17 17:06:27,174 p=3802 u=root |  ok: [localhost] => (item=7) => {
+    "item": "7"
+}
+2018-04-17 17:06:27,185 p=3802 u=root |  ok: [localhost] => (item=8) => {
+    "item": "8"
+}
+2018-04-17 17:06:27,194 p=3802 u=root |  ok: [localhost] => (item=9) => {
+    "item": "9"
+}
+2018-04-17 17:06:27,235 p=3802 u=root |  ok: [localhost] => (item=10) => {
+    "item": "10"
+}
+2018-04-17 17:06:27,241 p=3802 u=root |  PLAY RECAP *********************************************************************
+2018-04-17 17:06:27,242 p=3802 u=root |  localhost                  : ok=2    changed=0    unreachable=0    failed=0   
+2018-04-17 17:16:13,659 p=4395 u=root |  ERROR! unexpected parameter type in action: <class 'ansible.parsing.yaml.objects.AnsibleSequence'>
+
+The error appears to have been in '/root/Training/Day2/Ansible/startcontainer.yml': line 16, column 7, but may
+be elsewhere in the file depending on the exact syntax problem.
+
+The offending line appears to be:
+
+  tasks:
+    - name: Create Ubuntu docker containers
+      ^ here
+
+
+The error appears to have been in '/root/Training/Day2/Ansible/startcontainer.yml': line 16, column 7, but may
+be elsewhere in the file depending on the exact syntax problem.
+
+The offending line appears to be:
+
+  tasks:
+    - name: Create Ubuntu docker containers
+      ^ here
+
+2018-04-17 17:17:00,579 p=4408 u=root |  ERROR! unexpected parameter type in action: <class 'ansible.parsing.yaml.objects.AnsibleSequence'>
+
+The error appears to have been in '/root/Training/Day2/Ansible/startcontainer.yml': line 16, column 7, but may
+be elsewhere in the file depending on the exact syntax problem.
+
+The offending line appears to be:
+
+  tasks:
+    - name: Create Ubuntu docker containers
+      ^ here
+
+
+The error appears to have been in '/root/Training/Day2/Ansible/startcontainer.yml': line 16, column 7, but may
+be elsewhere in the file depending on the exact syntax problem.
+
+The offending line appears to be:
+
+  tasks:
+    - name: Create Ubuntu docker containers
+      ^ here
+
+2018-04-17 17:17:08,954 p=4415 u=root |  ERROR! the playbook: +16 could not be found
+2018-04-17 17:18:43,343 p=4432 u=root |  ERROR! the playbook: +16 could not be found
+2018-04-17 17:18:45,415 p=4435 u=root |  ERROR! unexpected parameter type in action: <class 'ansible.parsing.yaml.objects.AnsibleSequence'>
+
+The error appears to have been in '/root/Training/Day2/Ansible/startcontainer.yml': line 16, column 7, but may
+be elsewhere in the file depending on the exact syntax problem.
+
+The offending line appears to be:
+
+  tasks:
+    - name: Create Ubuntu docker containers
+      ^ here
+
+
+The error appears to have been in '/root/Training/Day2/Ansible/startcontainer.yml': line 16, column 7, but may
+be elsewhere in the file depending on the exact syntax problem.
+
+The offending line appears to be:
+
+  tasks:
+    - name: Create Ubuntu docker containers
+      ^ here
+
+2018-04-17 17:19:36,922 p=4440 u=root |  ERROR! unexpected parameter type in action: <class 'ansible.parsing.yaml.objects.AnsibleSequence'>
+
+The error appears to have been in '/root/Training/Day2/Ansible/startcontainer.yml': line 5, column 8, but may
+be elsewhere in the file depending on the exact syntax problem.
+
+The offending line appears to be:
+
+  pre_tasks:
+     - name: Remove all currently running ubuntu docker containers
+       ^ here
+
+
+The error appears to have been in '/root/Training/Day2/Ansible/startcontainer.yml': line 5, column 8, but may
+be elsewhere in the file depending on the exact syntax problem.
+
+The offending line appears to be:
+
+  pre_tasks:
+     - name: Remove all currently running ubuntu docker containers
+       ^ here
+
+2018-04-17 17:19:55,365 p=4445 u=root |  PLAY [Provision docker containers through ansible playbook] ********************
+2018-04-17 17:19:55,407 p=4445 u=root |  TASK [setup] *******************************************************************
+2018-04-17 17:19:58,437 p=4445 u=root |  ok: [localhost]
+2018-04-17 17:19:58,441 p=4445 u=root |  TASK [Remove all currently running ubuntu docker containers] *******************
+2018-04-17 17:19:58,966 p=4445 u=root |  fatal: [localhost]: FAILED! => {"changed": false, "failed": true, "msg": "missing required arguments: name"}
+2018-04-17 17:19:58,968 p=4445 u=root |  	to retry, use: --limit @/root/Training/Day2/Ansible/startcontainer.retry
+
+2018-04-17 17:19:58,969 p=4445 u=root |  PLAY RECAP *********************************************************************
+2018-04-17 17:19:58,974 p=4445 u=root |  localhost                  : ok=1    changed=0    unreachable=0    failed=1   
+2018-04-17 17:21:54,041 p=4852 u=root |  PLAY [Provision docker containers through ansible playbook] ********************
+2018-04-17 17:21:54,074 p=4852 u=root |  TASK [setup] *******************************************************************
+2018-04-17 17:21:57,085 p=4852 u=root |  ok: [localhost]
+2018-04-17 17:21:57,088 p=4852 u=root |  TASK [Remove all currently running docker containers] **************************
+2018-04-17 17:22:01,003 p=4852 u=root |  changed: [localhost]
+2018-04-17 17:22:01,012 p=4852 u=root |  TASK [Create Ubuntu docker containers] *****************************************
+2018-04-17 17:22:01,679 p=4852 u=root |  failed: [localhost] (item=1) => {"failed": true, "item": "1", "msg": "Failed to import docker-py - No module named docker. Try `pip install docker-py`"}
+2018-04-17 17:22:01,970 p=4852 u=root |  failed: [localhost] (item=2) => {"failed": true, "item": "2", "msg": "Failed to import docker-py - No module named docker. Try `pip install docker-py`"}
+2018-04-17 17:22:01,973 p=4852 u=root |  	to retry, use: --limit @/root/Training/Day2/Ansible/startcontainer.retry
+
+2018-04-17 17:22:01,973 p=4852 u=root |  PLAY RECAP *********************************************************************
+2018-04-17 17:22:01,973 p=4852 u=root |  localhost                  : ok=2    changed=1    unreachable=0    failed=1   
+2018-04-17 17:24:09,760 p=9238 u=root |  PLAY [Provision docker containers through ansible playbook] ********************
+2018-04-17 17:24:09,794 p=9238 u=root |  TASK [setup] *******************************************************************
+2018-04-17 17:24:12,755 p=9238 u=root |  ok: [localhost]
+2018-04-17 17:24:12,759 p=9238 u=root |  TASK [Remove all currently running docker containers] **************************
+2018-04-17 17:24:13,415 p=9238 u=root |  fatal: [localhost]: FAILED! => {"changed": true, "cmd": "docker rm -f $(docker ps -aq)", "delta": "0:00:00.239634", "end": "2018-04-17 17:24:13.382838", "failed": true, "rc": 1, "start": "2018-04-17 17:24:13.143204", "stderr": "\"docker rm\" requires at least 1 argument.\nSee 'docker rm --help'.\n\nUsage:  docker rm [OPTIONS] CONTAINER [CONTAINER...] [flags]\n\nRemove one or more containers", "stdout": "", "stdout_lines": [], "warnings": []}
+2018-04-17 17:24:13,423 p=9238 u=root |  	to retry, use: --limit @/root/Training/Day2/Ansible/startcontainer.retry
+
+2018-04-17 17:24:13,423 p=9238 u=root |  PLAY RECAP *********************************************************************
+2018-04-17 17:24:13,424 p=9238 u=root |  localhost                  : ok=1    changed=0    unreachable=0    failed=1   
+2018-04-17 17:24:40,230 p=9534 u=root |  PLAY [Provision docker containers through ansible playbook] ********************
+2018-04-17 17:24:40,255 p=9534 u=root |  TASK [setup] *******************************************************************
+2018-04-17 17:24:42,826 p=9534 u=root |  ok: [localhost]
+2018-04-17 17:24:42,828 p=9534 u=root |  TASK [Remove all currently running docker containers] **************************
+2018-04-17 17:24:43,504 p=9534 u=root |  fatal: [localhost]: FAILED! => {"changed": true, "cmd": "docker rm -f $(docker ps -aq)", "delta": "0:00:00.327521", "end": "2018-04-17 17:24:43.476888", "failed": true, "rc": 1, "start": "2018-04-17 17:24:43.149367", "stderr": "\"docker rm\" requires at least 1 argument.\nSee 'docker rm --help'.\n\nUsage:  docker rm [OPTIONS] CONTAINER [CONTAINER...] [flags]\n\nRemove one or more containers", "stdout": "", "stdout_lines": [], "warnings": []}
+2018-04-17 17:24:43,505 p=9534 u=root |  ...ignoring
+2018-04-17 17:24:43,508 p=9534 u=root |  TASK [Create Ubuntu docker containers] *****************************************
+2018-04-17 17:24:43,998 p=9534 u=root |  failed: [localhost] (item=1) => {"failed": true, "item": "1", "msg": "Failed to import docker-py - No module named docker. Try `pip install docker-py`"}
+2018-04-17 17:24:44,212 p=9534 u=root |  failed: [localhost] (item=2) => {"failed": true, "item": "2", "msg": "Failed to import docker-py - No module named docker. Try `pip install docker-py`"}
+2018-04-17 17:24:44,216 p=9534 u=root |  	to retry, use: --limit @/root/Training/Day2/Ansible/startcontainer.retry
+
+2018-04-17 17:24:44,217 p=9534 u=root |  PLAY RECAP *********************************************************************
+2018-04-17 17:24:44,217 p=9534 u=root |  localhost                  : ok=2    changed=1    unreachable=0    failed=1   
+2018-04-17 17:28:49,739 p=9894 u=root |  PLAY [Provision docker containers through ansible playbook] ********************
+2018-04-17 17:28:49,775 p=9894 u=root |  TASK [setup] *******************************************************************
+2018-04-17 17:28:52,434 p=9894 u=root |  ok: [localhost]
+2018-04-17 17:28:52,437 p=9894 u=root |  TASK [Remove all currently running docker containers] **************************
+2018-04-17 17:28:53,077 p=9894 u=root |  fatal: [localhost]: FAILED! => {"changed": true, "cmd": "docker rm -f $(docker ps -aq)", "delta": "0:00:00.293423", "end": "2018-04-17 17:28:53.053026", "failed": true, "rc": 1, "start": "2018-04-17 17:28:52.759603", "stderr": "\"docker rm\" requires at least 1 argument.\nSee 'docker rm --help'.\n\nUsage:  docker rm [OPTIONS] CONTAINER [CONTAINER...] [flags]\n\nRemove one or more containers", "stdout": "", "stdout_lines": [], "warnings": []}
+2018-04-17 17:28:53,079 p=9894 u=root |  ...ignoring
+2018-04-17 17:28:53,085 p=9894 u=root |  TASK [Create Ubuntu docker containers] *****************************************
+2018-04-17 17:28:55,173 p=9894 u=root |  changed: [localhost] => (item=1)
+2018-04-17 17:28:56,251 p=9894 u=root |  changed: [localhost] => (item=2)
+2018-04-17 17:28:56,256 p=9894 u=root |  TASK [Create CentOS docker containers] *****************************************
+2018-04-17 17:28:57,392 p=9894 u=root |  changed: [localhost] => (item=1)
+2018-04-17 17:28:58,443 p=9894 u=root |  changed: [localhost] => (item=2)
+2018-04-17 17:28:58,455 p=9894 u=root |  PLAY RECAP *********************************************************************
+2018-04-17 17:28:58,455 p=9894 u=root |  localhost                  : ok=4    changed=3    unreachable=0    failed=0   
+2018-04-17 17:53:12,863 p=10922 u=root |   _____________________________________________________________
+< PLAY [Provision docker containers through ansible playbook] >
+ -------------------------------------------------------------
+        \    ,-^-.
+         \   !oYo!
+          \ /./=\.\______
+               ##        )\/\
+                ||-----w||
+                ||      ||
+
+               Cowth Vader
+
+
+2018-04-17 17:53:12,933 p=10922 u=root |   ______________
+< TASK [setup] >
+ --------------
+     \
+      \
+       ("`-'  '-/") .___..--' ' "`-._
+         ` *_ *  )    `-.   (      ) .`-.__. `)
+         (_Y_.) ' ._   )   `._` ;  `` -. .-'
+      _.. `--'_..-_/   /--' _ .' ,4
+   ( i l ),-''  ( l i),'  ( ( ! .-'    
+
+
+2018-04-17 17:53:15,785 p=10922 u=root |  ok: [localhost]
+2018-04-17 17:53:15,862 p=10922 u=root |   _______________________________________________________
+< TASK [Remove all currently running docker containers] >
+ -------------------------------------------------------
+       \    ____
+        \  /    \
+          | ^__^ |
+          | (oo) |______
+          | (__) |      )\/\
+           \____/|----w |
+                ||     ||
+
+	         Moofasa
+
+
+2018-04-17 17:53:17,457 p=10922 u=root |  changed: [localhost]
+2018-04-17 17:53:17,533 p=10922 u=root |   ________________________________________
+< TASK [Create Ubuntu docker containers] >
+ ----------------------------------------
+ \     ____________ 
+  \    |__________|
+      /           /\
+     /           /  \
+    /___________/___/|
+    |          |     |
+    |  ==\ /== |     |
+    |   O   O  | \ \ |
+    |     <    |  \ \|
+   /|          |   \ \
+  / |  \_____/ |   / /
+ / /|          |  / /|
+/||\|          | /||\/
+    -------------|   
+        | |    | | 
+       <__/    \__>
+
+
+2018-04-17 17:53:18,810 p=10922 u=root |  changed: [localhost] => (item=1)
+2018-04-17 17:53:19,910 p=10922 u=root |  changed: [localhost] => (item=2)
+2018-04-17 17:53:20,014 p=10922 u=root |   ________________________________________
+< TASK [Create CentOS docker containers] >
+ ----------------------------------------
+   \
+    \        .
+     .---.  //
+    Y|o o|Y// 
+   /_(i=i)K/ 
+   ~()~*~()~  
+    (_)-(_)   
+
+     Darth 
+     Vader    
+     koala        
+
+
+2018-04-17 17:53:21,179 p=10922 u=root |  changed: [localhost] => (item=1)
+2018-04-17 17:53:22,330 p=10922 u=root |  changed: [localhost] => (item=2)
+2018-04-17 17:53:22,441 p=10922 u=root |   ______________
+< TASK [debug] >
+ --------------
+ \     /\  ___  /\
+  \   // \/   \/ \\
+     ((    O O    ))
+      \\ /     \ //
+       \/  | |  \/ 
+        |  | |  |  
+        |  | |  |  
+        |   o   |  
+        | |   | |  
+        |m|   |m|  
+
+
+2018-04-17 17:53:22,474 p=10922 u=root |  ok: [localhost] => {
+    "msg": "This tasks gets executed once all tasks are completed."
+}
+2018-04-17 17:53:22,525 p=10922 u=root |   ____________
+< PLAY RECAP >
+ ------------
+  \                                  ,+*^^*+___+++_
+   \                           ,*^^^^              )
+    \                       _+*                     ^**+_
+     \                    +^       _ _++*+_+++_,         )
+              _+^^*+_    (     ,+*^ ^          \+_        )
+             {       )  (    ,(    ,_+--+--,      ^)      ^\
+            { (@)    } f   ,(  ,+-^ __*_*_  ^^\_   ^\       )
+           {:;-/    (_+*-+^^^^^+*+*<_ _++_)_    )    )      /
+          ( /  (    (        ,___    ^*+_+* )   <    <      \
+           U _/     )    *--<  ) ^\-----++__)   )    )       )
+            (      )  _(^)^^))  )  )\^^^^^))^*+/    /       /
+          (      /  (_))_^)) )  )  ))^^^^^))^^^)__/     +^^
+         (     ,/    (^))^))  )  ) ))^^^^^^^))^^)       _)
+          *+__+*       (_))^)  ) ) ))^^^^^^))^^^^^)____*^
+          \             \_)^)_)) ))^^^^^^^^^^))^^^^)
+           (_             ^\__^^^^^^^^^^^^))^^^^^^^)
+             ^\___            ^\__^^^^^^))^^^^^^^^)\\
+                  ^^^^^\uuu/^^\uuu/^^^^\^\^\^\^\^\^\^\
+                     ___) >____) >___   ^\_\_\_\_\_\_\)
+                    ^^^//\\_^^//\\_^       ^(\_\_\_\)
+                      ^^^ ^^ ^^^ ^
+
+
+2018-04-17 17:53:22,525 p=10922 u=root |  localhost                  : ok=5    changed=3    unreachable=0    failed=0   
+2018-04-17 17:53:36,580 p=11961 u=root |   _____________________________________________________________
+< PLAY [Provision docker containers through ansible playbook] >
+ -------------------------------------------------------------
+      \                    / \  //\
+       \    |\___/|      /   \//  \\
+            /0  0  \__  /    //  | \ \    
+           /     /  \/_/    //   |  \  \  
+           @_^_@'/   \/_   //    |   \   \ 
+           //_^_/     \/_ //     |    \    \
+        ( //) |        \///      |     \     \
+      ( / /) _|_ /   )  //       |      \     _\
+    ( // /) '/,_ _ _/  ( ; -.    |    _ _\.-~        .-~~~^-.
+  (( / / )) ,-{        _      `-.|.-~-.           .~         `.
+ (( // / ))  '/\      /                 ~-. _ .-~      .-~^-.  \
+ (( /// ))      `.   {            }                   /      \  \
+  (( / ))     .----~-.\        \-'                 .~         \  `. \^-.
+             ///.----..>        \             _ -~             `.  ^-`  ^-_
+               ///-._ _ _ _ _ _ _}^ - - - - ~                     ~-- ,.-~
+                                                                  /.-~
+
+
+2018-04-17 17:53:36,669 p=11961 u=root |   ______________
+< TASK [setup] >
+ --------------
+\                             .       .
+ \                           / `.   .' " 
+  \                  .---.  <    > <    >  .---.
+   \                 |    \  \ - ~ ~ - /  /    |
+         _____          ..-~             ~-..-~
+        |     |   \~~~\.'                    `./~~~/
+       ---------   \__/                        \__/
+      .'  O    \     /               /       \  " 
+     (_____,    `._.'               |         }  \/~~~/
+      `----.          /       }     |        /    \__/
+            `-.      |       /      |       /      `. ,~~|
+                ~-.__|      /_ - ~ ^|      /- _      `..-'   
+                     |     /        |     /     ~-.     `-. _  _  _
+                     |_____|        |_____|         ~ - . _ _ _ _ _>
+
+
+2018-04-17 17:53:38,287 p=11961 u=root |   [ERROR]: User interrupted execution
+
+2018-04-17 17:53:52,849 p=12318 u=root |  PLAY [Provision docker containers through ansible playbook] ********************
+2018-04-17 17:53:52,886 p=12318 u=root |  TASK [setup] *******************************************************************
+2018-04-17 17:53:55,584 p=12318 u=root |  ok: [localhost]
+2018-04-17 17:53:55,589 p=12318 u=root |  TASK [Remove all currently running docker containers] **************************
+2018-04-17 17:53:57,126 p=12318 u=root |  changed: [localhost]
+2018-04-17 17:53:57,130 p=12318 u=root |  TASK [Create Ubuntu docker containers] *****************************************
+2018-04-17 17:53:58,305 p=12318 u=root |  changed: [localhost] => (item=1)
+2018-04-17 17:53:59,246 p=12318 u=root |  changed: [localhost] => (item=2)
+2018-04-17 17:53:59,249 p=12318 u=root |  TASK [Create CentOS docker containers] *****************************************
+2018-04-17 17:54:00,251 p=12318 u=root |  changed: [localhost] => (item=1)
+2018-04-17 17:54:01,198 p=12318 u=root |  changed: [localhost] => (item=2)
+2018-04-17 17:54:01,208 p=12318 u=root |  TASK [debug] *******************************************************************
+2018-04-17 17:54:01,244 p=12318 u=root |  ok: [localhost] => {
+    "msg": "This tasks gets executed once all tasks are completed."
+}
+2018-04-17 17:54:01,248 p=12318 u=root |  PLAY RECAP *********************************************************************
+2018-04-17 17:54:01,248 p=12318 u=root |  localhost                  : ok=5    changed=3    unreachable=0    failed=0   

@@ -1,0 +1,15 @@
+- name: Demonstrates simple loops in ansible
+  hosts: localhost
+  vars:
+    - software_packages: 
+        - tree
+        - vim
+        - default-jdk
+        - maven
+        - docker.io
+        - ansible
+
+  tasks:
+   - name: Print all the list values
+     debug: var=item
+     with_list: "{{software_packages}}"

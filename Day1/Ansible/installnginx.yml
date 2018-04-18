@@ -1,0 +1,27 @@
+- name: This playbook will install, configure and deploy web page in nginx web server
+  hosts: all
+  become: yes
+  vars: 
+    - provisioner_tool: Docker
+    - automation_tool: Ansible
+    - template_lib: Jinja2 Library
+    - proxy_configuration:
+       http_proxy: http://10.19.16.165:8080
+       https_proxy: https://10.19.16.165:8080
+
+  tasks:
+    - name: Install nginx web server
+      apt: name=nginx update_cache=yes state=present
+      environment: "{{proxy_configuration}}"
+  
+    - name: Configure nginx web root folder
+      copy: src=default dest=/etc/nginx/sites-available/default 
+
+    - name: Restart the nginx web server
+      service: name=nginx state=restarted 
+    
+    - name: Create the nginx web root folder
+      shell: "mkdir -p /var/html"
+
+    - name: Deploy a customized web page into nginx server
+      template: src=index.html.j2 dest=/var/html/index.html 

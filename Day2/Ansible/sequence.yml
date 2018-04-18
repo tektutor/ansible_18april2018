@@ -1,0 +1,6 @@
+- name: Demonstrates use of sequence loop
+  hosts: localhost
+  tasks:
+    - name: Print all the values in the sequence
+      debug: var=item
+      with_sequence: count=10
